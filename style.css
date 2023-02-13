@@ -132,7 +132,7 @@ footer p {
   padding: 20px;
 }
 
-/* -------  Media Query ------- */
+/* -------  Media Query (for desktop) ------- */
 
 @media all and (min-width: 480px) {
 
@@ -144,10 +144,15 @@ footer p {
     padding: 10px;
   }
 
+  main img {
+    max-width: 500px;
+  }
+
   /* ----- Search Form ----- */
 
   form {
     display: flex;
+    justify-content: space-between;
   }
 
   form div {
@@ -163,6 +168,10 @@ footer p {
     flex: 1;
   }
 
+  .form-item {
+    margin-right: 60px;
+  }
+
   /* ----- About Section ----- */
 
   .about-group {
@@ -170,15 +179,21 @@ footer p {
     align-items: center;
   }
 
-  .about-img {
-    width: 100%;
+  .about-img img{
+    width: 250px;
     padding-right: 15px;
+  }
+  
+  .about-text {
+    margin-left: 15px;
   }
 
   /* ----- Ideas Section ----- */
 
   .ideas-group {
     display: flex;
+    justify-content: center;
+    column-gap: 15px;
   }
 
   /* ----- Host Section ----- */
@@ -186,5 +201,13 @@ footer p {
   .host-group {
     display: flex;
     padding-top: 10px;
+  }
+
+  .host-div-text {
+    margin-right: 20px;
+  }
+
+  .host-div img {
+    width: 500px;
   }
 }
